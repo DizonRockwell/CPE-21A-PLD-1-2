@@ -1,0 +1,82 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOBU1ouX4Gl+G5R4gTxwCx/",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/DizonRockwell/CPE-21A-PLD-1-2/blob/main/Object%20and%20Class\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Object and Class"
+      ],
+      "metadata": {
+        "id": "TxDDh7iqJiFN"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Shape:\n",
+        "    def __init__(self):\n",
+        "        pass  # to avoid having properties in this class Shape\n",
+        "\n",
+        "\n",
+        "class Rectangle(Shape):\n",
+        "    def __init__(self, length, width):\n",
+        "        self.length = length\n",
+        "        self.width = width\n",
+        "\n",
+        "    def Perimeter(lsef):\n",
+        "        return 2 * (self.length + self.width)\n",
+        "\n",
+        "    def Area(self):\n",
+        "        return self.length * self.width\n",
+        "\n",
+        "\n",
+        "r = Rectangle(3, 5)\n",
+        "print(\"Perimeter: \", r.Perimeter())  # 16\n",
+        "print(\"Area: \", r.Area())  # 15"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7sn9uS2UH7O_",
+        "outputId": "1da657ce-d2df-49e0-c351-3c2f9dcda28d"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Perimeter:  16\n",
+            "Area:  15\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
